@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Braah+One&family=Buda:wght@300&family=Calistoga&family=DynaPuff:wght@400..700&family=Indie+Flower&family=Jersey+25&family=Kalnia+Glaze:wght@100..700&family=Noto+Serif+Khitan+Small+Script&family=Platypi:ital,wght@0,300..800;1,300..800&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: "Crimson Text", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            background-image: url("sam.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+        .header {
+            background-color: rgba(20, 20, 20, 0.9);
+            color: white;
+            letter-spacing: 5px;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 40px;
+            margin-right: -900px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .bar ul {
+            list-style-type: none;
+            color: red;
+            padding-left: 800px;
+            margin-bottom: -55px;    
+        }
+        .bar a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin-left: 50px;    
+        }
+        .bar li {
+            float: left;
+        }
+        .bar {
+            position: relative;
+            z-index: 1;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+        }
+        .main {
+            max-width: 70%;
+            margin: 60px auto 20px;
+            padding: 20px;
+            color: white;
+            text-align: justify;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            height: 600px;
+        }
+
+        .full, .max {
+            float: left;
+            width: 48%;
+            padding: 20px;
+        }
+        .full label, .max label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #f4f4f9;
+        }
+        .full input, .max input, .full textarea, .max textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            color: #333;
+        }
+        .full input[type="text"], .max input[type="text"], 
+        .full input[type="email"], .max input[type="email"], 
+        .full input[type="number"], .max input[type="number"], 
+        .full input[type="date"] {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .full textarea, .max textarea {
+            resize: none;
+            height: 30px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="sticky">
+    <div class="header">
+        <!-- Logo Image -->
+        <img src="logo.jpg" alt="Logo">
+        <h1><span>O</span>nline <span>V</span>oting <span>S</span>ystem</h1>
+    </div>
+    <div class="bar">
+        <ul>
+            <li><a href="file:///C:/Users/Yogita%20Jadhav/Desktop/Online%20Voting%20System/home.html">Home</a></li>
+            <li><a href="file:///C:/Users/Yogita%20Jadhav/Desktop/Online%20Voting%20System/registration.html">Register</a></li>
+            <li><a href="file:///C:/Users/Yogita%20Jadhav/Desktop/Online%20Voting%20System/login.html">Login</a></li>
+            <li><a href="file:///C:/Users/Yogita%20Jadhav/Desktop/Online%20Voting%20System/about.html">About</a></li>
+            <li><a href="file:///C:/Users/Yogita%20Jadhav/Desktop/Online%20Voting%20System/contact.html?service=&organization=&subject=">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <form>
+        <div class="full">
+            <label>Service Looking For</label>
+            <input list="services" name="service" placeholder="Service Looking For">
+            <datalist id="services">
+                <option value="eVoting">
+                <option value="eAuction">
+                <option value="eDataroom">
+                <option value="eAGM">
+            </datalist>
+
+            <label>Select Organization Type</label>
+            <input list="organizations" name="organization" placeholder="Select Organization Type">
+            <datalist id="organizations">
+                <option value="Association">
+                <option value="Housing Society">
+                <option value="College">
+                <option value="Club">
+                <option value="Cooperative">
+                <option value="Company">
+                <option value="eVoting for IBC">
+                <option value="Others">
+            </datalist>
+
+            <label>Name*</label>
+            <input type="text" placeholder="Name*">
+
+            <label>Email*</label>
+            <input type="email" placeholder="Email*">
+
+            <label>Message*</label>
+            <textarea placeholder="Message*" rows="4" size="10"></textarea>
+        </div>
+
+        <div class="max">
+            <label>Event Date</label>
+            <input type="date">
+
+            <label>Number Of Voters*</label>
+            <input type="number" placeholder="Number Of Voters*">
+
+            <label>Mobile Number*</label>
+            <input type="number" placeholder="Mobile Number*">
+
+            <label>Subject*</label>
+            <textarea name="subject" rows="2"></textarea>
+        </div>
+	    <br>
+        <br>
+
+        <div class="container">
+            <input type="submit" class="btn btn-success" value="Submit">
+        </div>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 [Online Voting System Designed By Sanket Jadhav]. All rights reserved.</p>
+</footer>
+</body>
+</html>
